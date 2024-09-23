@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header, footer{
+    box-shadow: 0 0 20px 10px #f5793146;
+}
+
+.flex {
+    display: flex;
+}
+
+h2.titulo{
+    color:#000000;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #f57831;
+}
+
+/* Cabeçalho */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+header a:hover{
+    color: #f57831;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav  ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .botao-contato button {
+    color: #FFFFFF;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #f57831;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .botao-contato button:hover{
+    box-shadow: 0px 0px 8px #f57931a4;
+}
+
+
+/* Início */
+
+section.topo-do-site {
+    padding: 40px 4%;   
+}
+
+section.topo-do-site .flex {
+    justify-content: center;
+    gap: 60px;
+}
+
+.topo-do-site h1{
+    color: #f57831;
+    font-size: 42px;
+}
+
+.topo-do-site .txt-topo-site{
+    width: 60%;
+    padding: 50px;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.txt-topo-site:hover{
+    box-shadow: 0 0 8px #f57831;
+}
+
+.topo-do-site .txt-topo-site p{
+    margin-top: 40px;
+    transition: 0.3s;
+}
+
+.img-topo-site {
+    margin: 70px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 50px;
+}
+
+
+.topo-do-site .img-topo-site img {
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.topo-do-site .img-topo-site img:hover {
+    transform: scale(1.05); 
+}
+
+/* Causas */
+
+section.causas {
+    padding: 40px 4%;
+}
+
+section.causas .flex{
+    justify-content: center;
+    gap: 60px;
+}
+
+.causas .causas-box{
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 0.3s;
+}
+
+.causas .causas-box:hover{
+    box-shadow: 0 0 8px #f57831;
+}
+
+.causas .causas-box i{
+    font-size: 70px;
+    color: #f57831;
+}
+.causas .causas-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+/* Consequências */
+
+section.consequencias {
+    padding: 40px 4%;
+}
+section.consequencias .flex{
+    justify-content: center;
+    gap: 60px;
+}
+
+.consequencias p{
+    margin-top: 15px;
+}
+
+.consequencias .consequencias-box h3{
+    font-size: 28px;
+}
+
+.consequencias .consequencias-box{
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.consequencias-box:hover{
+    box-shadow: 0 0 8px #f57831;
+}
+
+/* Gráficos */
+
+.graficos{
+    border-radius: 20px;
+}
+
+.graficos img{
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.graficos h4{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.graficos p{
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Prevenção e Combate*/
+
+section.combate {
+    padding: 40px 4%;
+}
+
+section.combate .flex{
+    gap: 60px;
+}
+
+.medidas-e-recursos h3{
+    font-size: 28px;
+}
+
+.medidas-e-recursos .recursos h3{
+    margin-top: 30px;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+ul li::marker{
+    color: #f57831;
+}
+
+.medidas-e-recursos p{
+    margin-top: 15px;
+}
+
+.medidas-e-recursos img{
+    display: block;
+    margin: 50px auto;
+}
+
+.medidas-e-recursos img:hover{
+   transform: scale(1.05);
+}
+
+.combate .medidas-e-recursos{
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: center;
+}
+
+.medidas-e-recursos:hover{
+    box-shadow: 0 0 8px #f57831;
+}
+
+/* Banco de Imagens */
+
+section.banco-imagens {
+    padding: 40px 4%;
+}
+
+.imgs {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;  
+}
+
+
+.banco-imagens .imgs img {
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.banco-imagens .imgs img:hover {
+    transform: scale(1.05); 
+}
+
+/* Contatos */
+
+section.contato {
+    padding: 40px 4%;
+}
+
+section.contato .flex{
+    justify-content: center;
+    gap: 60px;
+}
+
+.contato .contatos{
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 50px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.contatos form{
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contatos:hover {
+    box-shadow: 0 0 8px #f57831;
+}
+
+.contatos label{
+    margin-top: 15px;
+}
+
+.campo {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+.campo input, .campo textarea {
+    width: 500px;
+    padding: 8px;
+    border: 1px solid #f57831;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.campo textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.botao input {
+    color: #FFFFFF;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #f57831;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.botao input:hover {
+    box-shadow: 0px 0px 8px #f57931a4;
+}
+
+.contato h3{
+    font-size: 28px;
+}
+
+.contato .contatos a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.contato .contatos i{
+    color: #f57831;
+}
+
+.contatos .redes{
+    margin-top: 30px;
+}
+
+.redes:hover{
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+
+footer.rodape {
+    padding: 20px 4%;
+    justify-content: center;  
+}
+
+.desenvolvedor{
+    text-align: center;
+}
+
+.desenvolvedor p{
+    margin-bottom: 20px;
+}
+
+.desenvolvedor a{
+    margin: 20px;
+    text-decoration: none;
+    color: #f57831;
+}
+
+@media screen and (max-width: 1270px){
+    /* Classes Gerais */
+    .flex{
+        flex-direction: column;    
+    }
+
+    .txt-topo-site:hover, .consequencias-box:hover, .medidas-e-recursos:hover, .contatos:hover{
+        box-shadow: none;
+    }
+
+    /* Cabeçalho */
+    .menu-desktop, .botao-contato{
+        display: none;
+    }
+
+    header .logo img{
+        width: 70%;
+    }
+
+    /* Início */
+
+    .topo-do-site .txt-topo-site{
+        width: 100%;
+        padding: 30px;
+        transition: 0.3s;
+        border-radius: 20px;
+    }
+    
+    .img-topo-site {
+        margin: 0;
+    }
+
+    /* Causas */
+
+    section.causas .flex{
+        gap: 20px;
+    }
+
+    /* Consequências */
+
+    section.consequencias .flex{
+        gap: 0;
+    }
+
+    .consequencias .consequencias-box{
+        padding: 50px;
+        margin-top: 0;
+    }
+
+    .graficos img{
+        width: 100%;
+    }
+
+    /* Prevenção e Combate*/
+
+    section.combate .flex{
+        gap: 0;
+    }
+
+    .combate .medidas-e-recursos{
+        padding: 50px;
+        margin-top: 0;
+
+    }
+
+    .medidas-e-recursos img{
+        width: 70%;
+    }
+
+    /* Banco de Imagens */
+
+    section.banco-imagens{
+        padding-top: 0;
+    }
+
+
+    /* Contato */
+
+    .campo input, .campo textarea {
+        width: 250px;
+    }
+
+    section.contato .flex{
+        gap: 0;
+    }
+
+    .contato .contatos{
+        padding: 50px;
+        margin-top: 0;
+    }
+
+}
